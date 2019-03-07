@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Magnificent Food</title>
+    <link rel="icon" type="image/ico" href="foodicon.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="web.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133574872-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133574872-1');
+    </script>
+
+</head>
+<style>
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+    }
+
+    .mySlides {
+        display: none
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+</style>
+
+
+<body>
+    <div class="container" img src="lol.jpg">
+        <div class="container2">
+            <div class="top-left">Magnificent Food</div>
+            <div class="top-left2">Food is always delicious when sharing with others</div>
+        </div>
+
+        <div class="bar">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="recipe.html" target="_self">Recipe</a></li>
+                <li><a href="Cookbook.html">Cookbook</a></li>
+                <li><a href="TvShow.html">Tv Show</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="ContactUs.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+
+                <img src="./HomeImage/home4.jpg" style="width:680px">
+
+
+            </div>
+
+            <div class="mySlides">
+
+                <img src="./HomeImage/home5.jpg" style="width:680px">
+
+            </div>
+
+            <div class="mySlides">
+
+                <img src="./HomeImage/home8.jpg" style="width:680px">
+
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        <div class="homemid">
+            FEATURED FOOD
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <a href="https://www.buzzfeed.com/emofly/most-perfect-foods-in-the-universe">
+                <img src="food.jpeg" alt="Snow">
+                <div class="overlay">
+                    <div class="text">Food</div>
+                </div>
+            </a>
+        </div>
+        <div class="column">
+            <a href="https://www.huffpost.com/entry/best-cake-recipes_n_7256676">
+                <img src="cake1.jpg" alt="Forest">
+                <div class="overlay">
+                    <div class="text">Cake</div>
+                </div>
+            </a>
+        </div>
+        <div class="column">
+            <a href="https://www.foodadvisor.my/best-desserts-kl">
+                <img src="dessert.jpg" alt="Mountains">
+                <div class="overlay">
+                    <div class="text">Dessert</div>
+                </div>
+            </a>
+        </div>
+        <div class="column">
+            <a href="http://www.kuala-lumpur.ws/magazine/10-best-burger-joints.htm">
+                <img src="burger.jpg" alt="Mountains">
+                <div class="overlay">
+                    <div class="text">Burger</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
