@@ -906,6 +906,7 @@ li {
 }
 
 li a {
+  margin-left:50px;
     display: block;
     color: white;
     text-align: center;
@@ -919,7 +920,7 @@ li a:hover {
 }
 
 .active {
-    background-color: #33BCED;
+    background-color: pink;
 }
 
 
@@ -931,21 +932,24 @@ li a:hover {
   }
 
   .top-left {
+    margin-left:50px;
     top: 8px;
     font-size:300%;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Impact, Charcoal, sans-serif;
     font-style: inherit;
   }
 
   .top-left2 {
+    margin-left:50px;
     top: 60px;
-    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 145%;
   }        
 
   .bar{
+    margin-left: 40px;
     top:40px;
-    width: 165%;
+    width: 136%;
   }
 
   body{
@@ -955,9 +959,9 @@ li a:hover {
   }
 
   .container2{
-    margin-left: -440px;
-      background-color: lightblue;
-      width: 230%;
+    margin-left: -400px;
+      background-color: pink;
+      width: 200%;
   }
 
   * {
@@ -982,10 +986,12 @@ li a:hover {
   }
 
   .column img{
-  margin-left: 165px;
-    width: 400px;
-    height: 400px;    
+  margin-left: 100px;
+    width: 300px;
+    height: 300px;    
 }
+
+
 
   .slide-container .mySlides{
     width: auto;
@@ -1012,11 +1018,11 @@ li a:hover {
     right: 0;
     background-color:pink;
     overflow: hidden;
-    width: 405px;
+    width: 300px;
     height:0;
     transition: .5s ease;
     opacity: 0.9;
-    margin-left: 165px;
+    margin-left: 110px;
   }
 
   .overlay1 {
@@ -1024,13 +1030,13 @@ li a:hover {
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color:lightblue;
+    background-color:pink;
     overflow: hidden;
-    width: 405px;
+    width: 300px;
     height:0;
     transition: .5s ease;
     opacity: 0.9;
-    margin-left: 165px;
+    margin-left: 110px;
   }
 
   .overlay2 {
@@ -1038,13 +1044,13 @@ li a:hover {
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color:lightsalmon;
+    background-color:pink;
     overflow: hidden;
-    width: 405px;
+    width: 300px;
     height:0;
     transition: .5s ease;
     opacity: 0.9;
-    margin-left: 165px;
+    margin-left: 110px;
   }
 
   .overlay3 {
@@ -1052,36 +1058,35 @@ li a:hover {
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color:lightcoral;
+    background-color:pink;
     overflow: hidden;
-    width: 405px;
+    width: 300px;
     height:0;
     transition: .5s ease;
     opacity: 0.9;
-    margin-left: 165px;
-  }
+    margin-left: 110px;}
 
   .overlay4 {
     position: absolute;
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color:lavender;
+    background-color:pink;
     overflow: hidden;
-    width: 405px;
+    width: 300px;
     height:0;
     transition: .5s ease;
     opacity: 0.9;
-    margin-left: 165px;
+    margin-left: 110px;
   }
 
   .column:hover .overlay {
-    bottom: 0;
+    bottom: 40px;
     height: 100%;
   }
   
   .column:hover .overlay1 {
-    bottom: 0;
+    bottom: 40px;
     height: 100%;
   }
 
@@ -1102,7 +1107,7 @@ li a:hover {
 
   .text {
     color: white;
-    font-size: 100px;
+    font-size: 70px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1128,8 +1133,10 @@ font-size: 200%;
  }
 
 .homemid{
-  margin-left: -450px;
+  margin-left: -330px;
   font-size: 40px;
+  font-family: "Arial Black", Gadget, sans-serif;
+
 }
 
 .Recipemid{
@@ -1142,11 +1149,12 @@ font-size: 200%;
   height: 170px;
   border: 10px solid black;
   padding: 25px;
+  font-family: "Arial Black", Gadget, sans-serif;
 }
 
 .cookmid{
   margin-top: 40px;
-  margin-left: -450px;
+  margin-left: -400px;
   font-size: 40px;
   color:black;
   background-color: white;
@@ -1154,6 +1162,7 @@ font-size: 200%;
   height: 170px;
   border: 10px solid black;
   padding: 25px;
+  font-family: "Arial Black", Gadget, sans-serif;
 }
 
 .show{
@@ -1166,6 +1175,7 @@ font-size: 200%;
   height: 170px;
   border: 10px solid black;
   padding: 25px;
+  font-family: "Arial Black", Gadget, sans-serif;
 }
 
 .aboutword{
@@ -1178,6 +1188,7 @@ font-size: 200%;
   height: 170px;
   border: 10px solid black;
   padding: 25px;
+  font-family: "Arial Black", Gadget, sans-serif;
 }
 
 .about1{
@@ -1203,4 +1214,5 @@ font-size: 20px;
   height: 170px;
   border: 10px solid black;
   padding: 25px;
+  font-family: "Arial Black", Gadget, sans-serif;
 }
